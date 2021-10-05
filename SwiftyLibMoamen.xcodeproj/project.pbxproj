@@ -16,6 +16,7 @@
 		0183DE99270C6155007930DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0183DE97270C6155007930DE /* Main.storyboard */; };
 		0183DE9B270C6158007930DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0183DE9A270C6158007930DE /* Assets.xcassets */; };
 		0183DE9E270C6158007930DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0183DE9C270C6158007930DE /* LaunchScreen.storyboard */; };
+		0183DEA7270C64E7007930DE /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0183DEA6270C64E7007930DE /* SwiftyLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		0183DE9A270C6158007930DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0183DE9D270C6158007930DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0183DE9F270C6158007930DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0183DEA6270C64E7007930DE /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				0183DE72270C6129007930DE /* SwiftyLibMoamen.h */,
 				0183DE73270C6129007930DE /* Info.plist */,
+				0183DEA6270C64E7007930DE /* SwiftyLib.swift */,
 			);
 			path = SwiftyLibMoamen;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					0183DE6E270C6129007930DE = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					0183DE77270C6129007930DE = {
 						CreatedOnToolsVersion = 12.4;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0183DEA7270C64E7007930DE /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		0183DE84270C6129007930DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = K299V5NB32;
@@ -454,6 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Vodafone.SwiftyLibMoamen;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +469,7 @@
 		0183DE85270C6129007930DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = K299V5NB32;
@@ -486,6 +494,7 @@
 		0183DE87270C6129007930DE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K299V5NB32;
 				INFOPLIST_FILE = SwiftyLibMoamenTests/Info.plist;
@@ -504,6 +513,7 @@
 		0183DE88270C6129007930DE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K299V5NB32;
 				INFOPLIST_FILE = SwiftyLibMoamenTests/Info.plist;
